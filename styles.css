@@ -1,0 +1,192 @@
+/* Reset de estilos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o contêiner de cadastros */
+.cadastros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Estilo para o formulário de cadastro */
+.cadastro-form {
+    max-width: 400px;
+    margin: 20px 10px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.cadastro-form h3 {
+    color: #333;
+}
+
+.cadastro-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-form label {
+    margin-top: 15px;
+    color: #333;
+}
+
+.cadastro-form input,
+.cadastro-form select {
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cadastro-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cadastro-form button:hover {
+    background-color: #45a049;
+}
+
+/* ... (seu código existente) */
+
+/* Estilo para a lista de cadastros */
+.lista-cadastros {
+    max-width: 400px;
+    margin: 20px 10px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.lista-cadastros h3 {
+    color: #333;
+}
+
+.lista-cadastros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para cada item na lista de cadastros */
+.lista-cadastros li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.lista-cadastros li .data {
+    font-weight: bold;
+}
+
+.lista-cadastros li .tipo {
+    color: #4caf50;
+}
+
+.lista-cadastros li .horario,
+.lista-cadastros li .turno {
+    flex-grow: 1;
+    text-align: right;
+}
+
+/* ... (seu código existente) */
+
+
+/* ... (seu código existente) */
+
+/* Estilo para o botão Baixar Arquivo */
+.botao-copiar {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.botao-copiar:hover {
+    background-color: #45a049;
+}
+
+/* ... (seu código existente) */
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+#ambulancia {
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto;
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moverAmbulancia 10s linear infinite; /* Adicionado a animação */
+}
+
+@keyframes moverAmbulancia {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
